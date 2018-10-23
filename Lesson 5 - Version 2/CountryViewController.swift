@@ -22,6 +22,8 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         customizeCountryView()
         getCountryApi()
+       
+        
         // Do any additional setup after loading the view.
     }
   
@@ -51,14 +53,13 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     //set up table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 10
+        return countries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = countryTableView.dequeueReusableCell(withIdentifier: "CountryCell") as! CountryTableViewCell
-        //cell.textLabel?.text = countries[indexPath.row].name!
-        cell.textLabel?.text = "VietNam"
+        cell.textLabel?.text = countries[indexPath.row].name!
         return cell
     }
     
@@ -89,13 +90,13 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
                         temp.capital = json[i]["capital"].string
                         self.countries.append(temp)
                     }
+                    self.countryTableView.reloadData()
+                    
                 }
                 //print(self.countries)
-                print(self.countries.count)
+                //print(self.countries.count)
             }
         }
-            
-        print(self.countries)
-        print(self.countries.count)
+        
     }
 }
