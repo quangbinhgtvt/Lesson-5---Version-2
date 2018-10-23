@@ -66,7 +66,7 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         case 0:
             //return header size
         let headerWidth: CGFloat = screenWidth - (spacing * 2)
-          return CGSize(width: headerWidth, height: 60)
+          return CGSize(width: headerWidth, height: 80)
         default:
             let itemWidth: CGFloat = (screenWidth - spacing * 3)/2
             return CGSize(width: itemWidth, height: itemWidth)
@@ -80,5 +80,11 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 15
+    }
+    
+    //moveto Detaile Category View
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let detailCategoryView = DetailCategoryViewController(nibName: "DetailCategoryViewController", bundle: Bundle.main)
+        self.navigationController?.pushViewController(detailCategoryView, animated: true)
     }
 }

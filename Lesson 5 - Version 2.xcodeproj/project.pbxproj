@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6708D2C0217F695200936120 /* DetailCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708D2BE217F695200936120 /* DetailCategoryViewController.swift */; };
+		6708D2C1217F695200936120 /* DetailCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6708D2BF217F695200936120 /* DetailCategoryViewController.xib */; };
+		6708D2C4217F703700936120 /* DetailCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708D2C2217F703700936120 /* DetailCategoryTableViewCell.swift */; };
+		6708D2C5217F703700936120 /* DetailCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6708D2C3217F703700936120 /* DetailCategoryTableViewCell.xib */; };
 		6724759A217A19900074CDF7 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67247599217A19900074CDF7 /* CountryViewController.swift */; };
 		6724759D217A23C20074CDF7 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6724759B217A23C20074CDF7 /* CountryTableViewCell.swift */; };
 		6724759E217A23C20074CDF7 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6724759C217A23C20074CDF7 /* CountryTableViewCell.xib */; };
@@ -51,6 +55,10 @@
 		18BA6B676DB7D29A824C3AA6 /* Pods-Lesson 5 - Version 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson 5 - Version 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson 5 - Version 2/Pods-Lesson 5 - Version 2.release.xcconfig"; sourceTree = "<group>"; };
 		268C74540A8E7825A9B24D74 /* Pods_Lesson_5___Version_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Lesson_5___Version_2UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E34AF9A62BD42AFC55347A /* Pods-Lesson 5 - Version 2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson 5 - Version 2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson 5 - Version 2Tests/Pods-Lesson 5 - Version 2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6708D2BE217F695200936120 /* DetailCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoryViewController.swift; sourceTree = "<group>"; };
+		6708D2BF217F695200936120 /* DetailCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCategoryViewController.xib; sourceTree = "<group>"; };
+		6708D2C2217F703700936120 /* DetailCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		6708D2C3217F703700936120 /* DetailCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		67247599217A19900074CDF7 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		6724759B217A23C20074CDF7 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		6724759C217A23C20074CDF7 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
@@ -153,6 +161,10 @@
 				675BF89F217E30BE004243A7 /* CategoryCollectionViewCell.xib */,
 				675BF8A2217E3282004243A7 /* CategoryHeaderCollectionViewCell.swift */,
 				675BF8A3217E3282004243A7 /* CategoryHeaderCollectionViewCell.xib */,
+				6708D2BE217F695200936120 /* DetailCategoryViewController.swift */,
+				6708D2BF217F695200936120 /* DetailCategoryViewController.xib */,
+				6708D2C2217F703700936120 /* DetailCategoryTableViewCell.swift */,
+				6708D2C3217F703700936120 /* DetailCategoryTableViewCell.xib */,
 			);
 			path = "Lesson 5 - Version 2";
 			sourceTree = "<group>";
@@ -307,7 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				675BF8A1217E30BE004243A7 /* CategoryCollectionViewCell.xib in Resources */,
+				6708D2C5217F703700936120 /* DetailCategoryTableViewCell.xib in Resources */,
 				675BF8A5217E3282004243A7 /* CategoryHeaderCollectionViewCell.xib in Resources */,
+				6708D2C1217F695200936120 /* DetailCategoryViewController.xib in Resources */,
 				6724759E217A23C20074CDF7 /* CountryTableViewCell.xib in Resources */,
 				6748538B2178BAAA00838000 /* LaunchScreen.storyboard in Resources */,
 				675BF89D217E1E17004243A7 /* CategoriesViewController.xib in Resources */,
@@ -430,11 +444,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6708D2C4217F703700936120 /* DetailCategoryTableViewCell.swift in Sources */,
 				675BF8A0217E30BE004243A7 /* CategoryCollectionViewCell.swift in Sources */,
 				677F77F32178F379001FA575 /* SignUpViewController.swift in Sources */,
 				6724759A217A19900074CDF7 /* CountryViewController.swift in Sources */,
 				674853832178BAA900838000 /* LoginController.swift in Sources */,
 				674853812178BAA900838000 /* AppDelegate.swift in Sources */,
+				6708D2C0217F695200936120 /* DetailCategoryViewController.swift in Sources */,
 				67D6B4C2217CC8E10043FFAA /* Country.swift in Sources */,
 				675BF8A4217E3282004243A7 /* CategoryHeaderCollectionViewCell.swift in Sources */,
 				675BF89C217E1E17004243A7 /* CategoriesViewController.swift in Sources */,

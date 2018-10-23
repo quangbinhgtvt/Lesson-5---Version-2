@@ -51,14 +51,14 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     //set up table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return countries.count
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = countryTableView.dequeueReusableCell(withIdentifier: "CountryCell") as! CountryTableViewCell
         //cell.textLabel?.text = countries[indexPath.row].name!
-        cell.textLabel?.text = countries[indexPath.row].name
+        cell.textLabel?.text = "VietNam"
         return cell
     }
     
